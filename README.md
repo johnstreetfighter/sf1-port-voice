@@ -1,6 +1,6 @@
-# sf1-port-voice (private)
+# sf1-port-voice
 
-The voice pack for [sf1-port](https://github.com/johnstreetfighter/sf1-port): the overhaul announcer's generated lines, stored in this separate private pack (spec #216, ADR 0011).
+The voice pack for [sf1-port](https://github.com/johnstreetfighter/sf1-port): the overhaul announcer's generated lines, stored in this separate pack (spec #216, ADR 0011).
 
 - `manifest.json` lists each line (`<stem>.vox`) with its nibble count and CRC-32. The game checks the pack against it and refuses the whole pack on any mismatch.
 - `<stem>.vox` is a line as 4-bit MSM5205 ADPCM at 4 kHz, two nibbles a byte, high nibble first.
@@ -10,4 +10,4 @@ The line list, prompts, the selected takes and the credit ledger are in the game
 
 The archived build plan uses paths relative to this pack. Run the `sf-audio voice-pack` command from this directory when using that plan.
 
-Push after each `build-pack`. Keep this repository private.
+Push after each `build-pack`.
